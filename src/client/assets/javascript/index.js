@@ -99,9 +99,9 @@ async function handleCreateRace() {
 	// TODO - call the async function runCountdown
 	runCountdown()
 	// TODO - call the async function startRace
-	//startRace(store.race_id)
+	startRace(store.race_id)
 	// TODO - call the async function runRace
-	//runRace(store.race_id)
+	runRace(store.race_id)
 }
 
 function runRace(raceID) {
