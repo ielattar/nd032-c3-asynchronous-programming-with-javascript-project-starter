@@ -97,11 +97,13 @@ async function handleCreateRace() {
 
 	// The race has been created, now start the countdown
 	// TODO - call the async function runCountdown
-	runCountdown()
+	runCountdown().then(()=>
+		startRace(store.race_id)).then(()=>runRace(store.race_id)).catch(error => console.log(error)
+);
 	// TODO - call the async function startRace
-	startRace(store.race_id)
+	
 	// TODO - call the async function runRace
-	runRace(store.race_id)
+	
 }
 
 function runRace(raceID) {
